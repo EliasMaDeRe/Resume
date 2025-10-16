@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Elias Madera De Regil</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.5em;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 8px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+        .contact-info {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 0.95em;
+        }
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .item-header p {
+            margin: 0;
+            color: #555;
+            font-style: italic;
+            font-size: 0.9em;
+        }
+        ul {
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+        li {
+            margin-bottom: 8px;
+            color: #444;
+        }
+        .skills-container p {
+            background-color: #ecf0f1;
+            padding: 12px 15px;
+            border-radius: 6px;
+        }
+        strong {
+            color: #2c3e50;
+        }
+        em {
+            color: #555;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Elias Madera De Regil</h1>
+            <div class="contact-info">
+                <span>+52 (998) 3461860</span> |
+                <a href="mailto:byemadera@gmail.com">byemadera@gmail.com</a> |
+                <a href="https://github.com/tu_usuario" target="_blank" rel="noopener noreferrer">Github</a> |
+                <a href="https://linkedin.com/in/tu_usuario" target="_blank" rel="noopener noreferrer">Linkedin</a>
+            </div>
+        </header>
+
+        <main>
+            <section class="section">
+                <h2>EDUCATION</h2>
+                <div class="item">
+                    <div class="item-header">
+                        <h3>BS in Software Engineering, Facultad de Matemáticas UADY</h3>
+                        <p>Expected Graduation: December 2025</p>
+                    </div>
+                    <p>GPA: 3.7</p>
+                </div>
+                <div class="item">
+                     <div class="item-header">
+                        <h3>High School, Escuela Preparatoria Uno UADY</h3>
+                        <p>Graduated: June 2021</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section skills-container">
+                <h2>TECHNICAL SKILLS</h2>
+                <p>
+                    <strong>Languages:</strong> Go, Java, C, C++, Python; 
+                    <strong>Git Tools:</strong> VSCode, Git, Github; 
+                    <strong>Others:</strong> Phabricator, Grafana, SQL, JIRA
+                </p>
+            </section>
+
+            <section class="section">
+                <h2>EXPERIENCE</h2>
+                <div class="item">
+                    <div class="item-header">
+                        <h3>Uber - Software Engineering Intern</h3>
+                        <p>May 2025 - August 2025 | Sunnyvale, California</p>
+                    </div>
+                    <em>UberEats for Business</em>
+                    <ul>
+                        <li>Enhanced Uber Eats orders details in Uber for Business CSV Files <a href="https://help.uber.com/en/business/article/upcoming-changes-to-uber-for-business-csv-files?nodeId=71a473ac-3252-4aef-9622-447fac43a99f" target="_blank" rel="noopener noreferrer">link</a>.</li>
+                        <li>Added Uber For Business promotions support in Uber Eats. These upfront discounts are offered to strategic U4B clients unlocking millions in sales deals via negotiations incentives.</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="item-header">
+                        <h3>Uber - Software Engineering Intern</h3>
+                        <p>May 2024 - August 2024 | San Francisco, California</p>
+                    </div>
+                     <em>UberEats for Business</em>
+                    <ul>
+                        <li>Designed, implemented and rolled out a feature to automatically onboard target users to Uber for Business, contributing over 20,000 profiles a day. An over 50X increase from the existing initiative resulting in 10M~ increased annual GB.</li>
+                        <li>Used AthenaX to filter Kafka events, implemented a Kafka Consumer Proxy and a gRPC endpoint to process the events and integrate with secure payment services. Set up rate limits, alerts, metrics and retry configurations.</li>
+                        <li>Controlled roll out using feature flags, shadow rollout and monitoring internal data.</li>
+                    </ul>
+                </div>
+                 <div class="item">
+                    <div class="item-header">
+                        <h3>Uber - Software Engineering Intern</h3>
+                        <p>May 2023 - August 2023 | San Francisco, California</p>
+                    </div>
+                     <em>Uber Reserve</em>
+                    <ul>
+                        <li>Refactored the reserve pre-trip screen. A screen shared across 4 partner teams and 5 reserve products.</li>
+                        <li>Reduced the number of calls made to the service to get trip information by 50%.</li>
+                        <li>Lowered the backend latency for mobile pushes for the screen in 27%.</li>
+                        <li>Optimized external gateway calls by refactoring them to a parallel flow.</li>
+                        <li>Added metrics and alerts for internal data visibility, wrote unit tests for all partner teams and worked on code quality tasks and cleaning unused legacy code.</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <div class="item-header">
+                        <h3>Uber - Career Prep Fellow</h3>
+                        <p>March 2022 - December 2022 | Virtual</p>
+                    </div>
+                    <ul>
+                        <li>Nine-month program consisting of bi-monthly workshops with topics such as technical interview skills, insights into how top engineers succeed and self-marketing skills.</li>
+                        <li>Monthly meetings with an Uber Senior Software Engineer to achieve OKRs.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="section">
+                <h2>COURSES AND CERTIFICATES</h2>
+                <ul>
+                    <li>Salesforce Basics - University of California, Irvine - March 2022</li>
+                    <li>Technical Support Fundamentals - Google - May 2021</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>LANGUAGES</h2>
+                <ul>
+                    <li><strong>Spanish</strong> - Native.</li>
+                    <li><strong>English</strong> - Highly proficient, near-native fluency (CEFR C2 level). Tests taken: TOEFL, Cambridge English, Duolingo English Test.</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>EXTRACURRICULAR</h2>
+                <div class="item">
+                     <div class="item-header">
+                        <h3>Salesforce Admin Group Mérida - Community Group Leader</h3>
+                        <p>February 2022 - Present | Mérida, México</p>
+                    </div>
+                    <ul>
+                        <li>Led, coordinated, prepared and directed monthly events of 150+ attendees around the Salesforce ecosystem.</li>
+                        <li>Interacted with Salesforce MVPs, brands, and companies to bring attention to college students on the career paths in Salesforce and the Administrator role.</li>
+                        <li>Managed in person/hybrid events, social media posts, live streams, conferences and more.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>PROJECTS</h2>
+                <div class="item">
+                    <div class="item-header">
+                       <h3>LinkJob - Project Leader</h3>
+                       <p><a href="https://github.com/tu-proyecto" target="_blank" rel="noopener noreferrer">Github</a></p>
+                    </div>
+                    <ul>
+                        <li>Project aimed at making information for Software Engineering jobs in Mexico easily available to students with visual graphics to visualize the up-to-date data.</li>
+                        <li>Led a team of 5 Software Engineering students along a term of six months to propose, devise and develop the project.</li>
+                        <li>Worked on: Data collection (Selenium for Python), Data cleaning (Pandas), Data analysis and modeling (Matplotlib).</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
