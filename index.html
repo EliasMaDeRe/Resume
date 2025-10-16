@@ -21,14 +21,49 @@
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.08);
         }
+        
+        /* --- ESTILOS DEL ENCABEZADO Y FOTO DE PERFIL (NUEVO) --- */
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+            gap: 30px; /* Espacio entre la foto y el texto */
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Hace la imagen circular */
+            object-fit: cover; /* Evita que la imagen se distorsione */
+            border: 3px solid #3498db; /* Borde con el color principal */
+        }
+        
+        .header-text h1 {
+            margin-bottom: 5px;
+        }
+
+        .contact-info {
+            font-size: 0.95em;
+        }
+        
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
         h1, h2, h3 {
             color: #2c3e50;
             margin-top: 0;
         }
         h1 {
-            text-align: center;
             font-size: 2.5em;
-            margin-bottom: 10px;
         }
         h2 {
             font-size: 1.5em;
@@ -41,19 +76,7 @@
             font-size: 1.2em;
             margin-bottom: 5px;
         }
-        .contact-info {
-            text-align: center;
-            margin-bottom: 30px;
-            font-size: 0.95em;
-        }
-        .contact-info a {
-            color: #3498db;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
+        
         .section {
             margin-bottom: 25px;
         }
@@ -93,18 +116,39 @@
             color: #555;
             font-weight: bold;
         }
+
+        /* --- ESTILOS PARA MÓVILES (NUEVO) --- */
+        @media (max-width: 600px) {
+            .header-container {
+                flex-direction: column; /* Apila la foto sobre el texto */
+            }
+            .header-text {
+                text-align: center; /* Centra el texto debajo de la foto */
+            }
+            .contact-info {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
         <header>
-            <h1>Elias Madera De Regil</h1>
-            <div class="contact-info">
-                <span>+52 (998) 3461860</span> |
-                <a href="mailto:byemadera@gmail.com">byemadera@gmail.com</a> |
-                <a href="https://github.com/tu_usuario" target="_blank" rel="noopener noreferrer">Github</a> |
-                <a href="https://linkedin.com/in/tu_usuario" target="_blank" rel="noopener noreferrer">Linkedin</a>
+            <div class="header-container">
+                <img src="pfp.jpg" alt="Foto de perfil de Elias Madera De Regil" class="profile-photo">
+                
+                <div class="header-text">
+                    <h1>Elias Madera De Regil</h1>
+                    <div class="contact-info">
+                        <span>+52 (998) 3461860</span> |
+                        <a href="mailto:byemadera@gmail.com">byemadera@gmail.com</a> |
+                        <a href="https://github.com/EliasMaDeRe" target="_blank" rel="noopener noreferrer">Github</a> |
+                        <a href="https://linkedin.com/in/eliasmadera" target="_blank" rel="noopener noreferrer">Linkedin</a>
+                    </div>
+                </div>
             </div>
         </header>
 
